@@ -32,13 +32,13 @@ module.exports.start = function start(callback) {
 	_this.init(function(app, db, config) {
 
 		// Start the app by listening on <port>
-		app.listen(port, "0.0.0.0",, function() {
+		app.listen(config.port, function() {
 
 			// Logging initialization
 			console.log('--');
 			console.log(chalk.green(config.app.title));
 			console.log(chalk.green('Environment:\t\t\t' + process.env.NODE_ENV));
-			console.log(chalk.green('Port:\t\t\t\t' + port, "0.0.0.0",));
+			console.log(chalk.green('Port:\t\t\t\t' + config.port));
 			console.log(chalk.green('Database:\t\t\t\t' + config.db.uri));
 			if (process.env.NODE_ENV === 'secure') {
 				console.log(chalk.green('HTTPs:\t\t\t\ton'));
