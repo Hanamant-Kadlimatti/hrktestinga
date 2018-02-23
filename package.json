@@ -5,6 +5,10 @@
   "meanjs-version": "0.4.0",
   "author": "Bhuvan",
   "license": "MIT",
+  "engines": {
+    "node": "5.0.0",
+    "npm": "4.6.1"
+  },
   "scripts": {
     "start": "grunt",
     "test": "grunt test",
